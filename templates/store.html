@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Welcome to the shawrma store</title>
+<head><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<title>Only for the shawrma</title>
+
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
 </head>
 <body>
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/store">STORE</a></li>
+</ul>
+
+
 	<h1>Alo</h1>
-	<a href="/">Home</a>
 	<div class="card">
-  <img src="https://www.google.co.il/url?sa=i&source=images&cd=&ved=2ahUKEwilobSsisflAhUDJhoKHYX-Cu0QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.themediterraneandish.com%2Fchicken-shawarma-recipe%2F&psig=AOvVaw2HK23p4A5hzAivTIfElzS8&ust=1572631321609031.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Shawrma</h1>
+  <img src="{{ url_for('static', filename='alo.jpeg') }}" alt="shawrma" style="width:90%" "height:40%">
+  <div class="card">
   <p class="price">$40.99</p>
+  <p>Some shawrma</p>
+  <p><button>Add to Cart</button></p>
+</div>
+	<div class="card">
+  <img src="{{ url_for('static', filename='shawrma.jpeg') }}" alt="shawrma" style="width:90%" "height:40%">
+  <div class="card">
+  <p class="price">$30.99</p>
   <p>Some shawrma</p>
   <p><button>Add to Cart</button></p>
 </div>
