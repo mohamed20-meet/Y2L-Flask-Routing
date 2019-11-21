@@ -43,26 +43,43 @@ li a:hover:not(.active) {
 
 <ul>
   <li><a class="active" href="/">Home</a></li>
-  <li><a href="/store">STORE</a></li>
+  <li><a  href="/cart">Cart</a></li>
 </ul>
 
 
-	<h1>Alo</h1>
-	<div class="card">
-  <img src="{{ url_for('static', filename='alo.jpeg') }}" alt="shawrma" style="width:90%" "height:40%">
-  <div class="card">
-  <p class="price">$40.99</p>
-  <p>Some shawrma</p>
-  <p><button>Add to Cart</button></p>
-</div>
-	<div class="card">
-  <img src="{{ url_for('static', filename='shawrma.jpeg') }}" alt="shawrma" style="width:90%" "height:40%">
-  <div class="card">
-  <p class="price">$30.99</p>
-  <p>Some shawrma</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
+	<h1>Alo buy some shawrma</h1>
+<table width="100%">
+	<tr>
+		<th>
+			<div class="card">
+		  		<img src="{{ url_for('static', filename='alo.jpeg') }}" alt="shawrma" style="width:90%" "height:40%">
+		  	<div class="card">
+		  		<p class="price">$40.99</p>
+		  		<p>Some shawrma</p>
+		  		<p><button>Add to Cart</button></p>
+			</div>
+		</th>
+		<th>
+			<div class="card">
+		  		<img src="{{ url_for('static', filename='shawrma.jpeg') }}" alt="shawrma" style="width:90%" "height:40%">
+			</div>
+			<div class="card">
+		 		<p class="price">$30.99</p>
+		 		<p>Some shawrma</p>
+		  		<p><button>Add to Cart</button></p>
+			</div>
+		</th>
+		<th>
+			<div class="card">
+				<img src="{{ url_for('static', filename='sha.jpg') }}" alt="shawrma" style="width:90%" "height:40%">
+			<div class="card">
+				<p class="price">$40.99</p>
+				<p>shawrms for familys</p>
+				<p><button>Add to Cart</button></p>
+			</div>
+		</th>
+	</tr>
+</table>
 
 </body>
 </html>

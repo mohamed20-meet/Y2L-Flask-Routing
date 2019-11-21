@@ -18,6 +18,12 @@ def store():
 		"store.html")
 
 
+@app.route('/cart')
+def cart():
+	return render_template(
+		"cart.html")
+
+
 
 #####################
 

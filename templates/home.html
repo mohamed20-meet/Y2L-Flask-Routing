@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style for home.css') }}">
-	<title>home</title>
-</head><style>
+<head>
+<style>
+body  {
+  background-image: url("/static/homepic.jpeg")
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -39,16 +41,13 @@ li a:hover:not(.active) {
 </head>
 <body>
 
+
 <ul>
   <li><a class="active" href="/">Home</a></li>
   <li><a href="/store">Store</a></li>
+  <li><a href="/cart">Cart</a></li>
+
 </ul>
-
-<body>
-	<h1>welcome to the shawrma store</h1>
-
-
-
 
 </body>
 </html>
