@@ -14,8 +14,9 @@ def home():
 
 @app.route('/store')
 def store():
+	products = query_all()
 	return render_template(
-		"store.html")
+		"store.html", m = products)
 
 
 @app.route('/cart')
